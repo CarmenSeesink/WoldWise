@@ -30,21 +30,11 @@ class HomeFragment : Fragment(), OnCategoryItemClickListener {
         binding.categoryButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_gameFragment)
         )
-        val categoryList = generateDummyList(10)
-        binding.categoryList.adapter = CategoryAdapter(categoryList, this)
+        val categoryList = viewModel.generateDummyList(5)
+        binding.categoryList.adapter = CategoryAdapter(viewModel.categories, this)
         binding.categoryList.layoutManager = LinearLayoutManager(context)
         binding.categoryList.setHasFixedSize(true)
         return binding.root
-    }
-
-    private fun generateDummyList(size: Int): List<CategoryItem>{
-        val list = ArrayList<CategoryItem>()
-        for (i in 1 until size) {
-            val item = CategoryItem(i,"Category $i")
-            list += item
-        }
-
-        return list
     }
 
     override fun onCategoryClick(category: CategoryItem, position: Int, view: View) {

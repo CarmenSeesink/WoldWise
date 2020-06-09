@@ -34,6 +34,10 @@ class GameFragment : Fragment() {
             binding.score.text = "Score: $newScore"
         })
 
+        viewModel.currentQuestion.observe(viewLifecycleOwner, Observer { newCurrent ->
+            binding.currentQuestion.text = "QUESTION $newCurrent"
+        })
+
         viewModel.question.observe(viewLifecycleOwner, Observer { newQuestion ->
             binding.question.text = newQuestion.question
             val rGroup = binding.radioGroup
