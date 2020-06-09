@@ -38,9 +38,9 @@
 
 ![image1][image1]
 
-Respiratory viruses like the COVID-19, spread when mucus or droplets containing the virus get into your body through your eyes, nose or throat (Sheeran, 2020). Most often, this happens through your hands. Hands are one of the most common ways that the virus spreads from one person to the next (Misra, 2018). During a global pandemic,like the one we are experiencing today, one of the cheapest, easiest, and most important ways to prevent the spread of a virus is to wash your hands frequently with soap and water (Misra, 2018). 
+We are living in such an amazing world, with endless wonders, diverse cultures, interesting foods and entertaining sports. But how well do you know this world we are living in? Do you know what the currency of Mongolia is? What is the population of Mexico?
 
-SoapSafe is a Augmented Reality application which aims to inform users of the beneficial effects of proper hand washing. The application educates and motivates while creating an interactive experience.
+WorldWise is a fun trivia app developed for you. WorldWise will test your knowledge and help you learn about this amazing world we call home.
 
 ### Built With
 
