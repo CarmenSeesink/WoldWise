@@ -48,19 +48,18 @@ class GameViewModel : ViewModel() {
     }
 
     private val questions = listOf(
-        Question("Our First Question",1, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our Second Question",1, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Third Question",1, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our First Question",2, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our Second Question",2, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our Third Question",2, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our First Question",3, listOf("answerOne", "answerTwo", "answerThree"), "answerOne"),
-        Question("Our Second Question",3, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Third Question",3, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Second Question",3, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Third Question",4, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Second Question",4, listOf("answerOne", "answerTwo", "answerThree"),"answerOne"),
-        Question("Our Third Question",4, listOf("answerOne", "answerTwo", "answerThree"),"answerOne")
+        Question("Which country has the world's highest waterfall?",1, listOf("Uganda", "Venezuela", "America"), "Venezuela"),
+        Question("Name the smallest Asian country in terms of both population and area?",1, listOf("Cook Island", "Maldives", "Tuvalu"),"Maldives"),
+        Question("How many stars are there on the flag of China?",1, listOf("2", "7", "5"), "5"),
+        Question("The word “Ketchup” comes from “Koetsiap”, which is in what language?",2, listOf("Swedish", "Malay", "Chinese"), "Malay"),
+        Question("Fortune cookies were first made in which of the following countries?",2, listOf("Japan", "Singapore", "America"), "America"),
+        Question("Belgian waffles were invented where?",2, listOf("Belgium", "Netherlands", "Luxembourg"), "Luxembourg"),
+        Question("Persepolis FC is a football club of which country?",3, listOf("Greece", "Egypt", "Iran"), "Iran"),
+        Question("Which of these is the oldest horse racing event?",3, listOf("Kentucky Derby", "Grand National", "Melbourne Cup"),"Grand National"),
+        Question("Where were the 1952 Olympic Games held?",3, listOf("Japan", "Germany", "Helsinki"),"Helsinki"),
+        Question("In what country is it considered a compliment to slurp loudly while eating soup?",4, listOf("Iceland", "Japan", "Russia"),"Japan"),
+        Question("What is the best way to eat in India?",4, listOf("Using a spoon", "Using your left hand", "Using your right hand"),"Using your right hand"),
+        Question("How does a Chinese wife gain respect from her husband's family?",4, listOf("Cuts her hair", "Gives birth to a son", "Bows down to them"),"Gives birth to a son")
     )
 
     fun generateDummyList(size: Int): List<CategoryItem>{
@@ -74,7 +73,7 @@ class GameViewModel : ViewModel() {
     }
 
      val categories = listOf(
-        CategoryItem(1,"History"),
+        CategoryItem(1,"General"),
         CategoryItem(2,"Food"),
         CategoryItem(3,"Sport"),
         CategoryItem(4,"Culture")

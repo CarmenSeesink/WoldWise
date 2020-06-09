@@ -39,10 +39,18 @@
         android:id="@+id/gameWonFragment"
         android:name="com.example.worldwise.GameWonFragment"
         android:label="fragment_game_won"
-        tools:layout="@layout/fragment_game_won" />
+        tools:layout="@layout/fragment_game_won" >
+        <action
+            android:id="@+id/action_gameWonFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameLostFragment"
         android:name="com.example.worldwise.GameLostFragment"
         android:label="fragment_game_lost"
-        tools:layout="@layout/fragment_game_lost" />
+        tools:layout="@layout/fragment_game_lost" >
+        <action
+            android:id="@+id/action_gameLostFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
