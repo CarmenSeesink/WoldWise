@@ -24,7 +24,6 @@ class GameLostFragment : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_gameLostFragment_to_homeFragment)
         )
         return binding.root
-        return inflater.inflate(R.layout.fragment_game_lost, container, false)
     }
 
 }

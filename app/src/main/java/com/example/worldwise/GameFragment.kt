@@ -1,5 +1,7 @@
 package com.example.worldwise
 
+import android.annotation.SuppressLint
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,6 +15,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
+import com.bumptech.glide.Glide
 import com.example.worldwise.databinding.FragmentGameBinding
 
 /**
@@ -22,6 +25,7 @@ class GameFragment : Fragment() {
 
     private val viewModel: GameViewModel by activityViewModels()
 
+    @SuppressLint("ResourceType", "SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,6 +44,7 @@ class GameFragment : Fragment() {
 
         viewModel.question.observe(viewLifecycleOwner, Observer { newQuestion ->
             binding.question.text = newQuestion.question
+            Glide.with(this).load(Uri.parse("file:///android_asset/${newQuestion.image}")).into(binding.imageView)
             val rGroup = binding.radioGroup
             rGroup.removeAllViews()
 

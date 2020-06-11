@@ -1,5 +1,7 @@
 package com.example.worldwise
 
+import android.annotation.SuppressLint
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.example.worldwise.databinding.FragmentHomeBinding
 
 /**
@@ -19,7 +22,6 @@ import com.example.worldwise.databinding.FragmentHomeBinding
 class HomeFragment : Fragment(), OnCategoryItemClickListener {
 
     private val viewModel: GameViewModel by activityViewModels()
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
