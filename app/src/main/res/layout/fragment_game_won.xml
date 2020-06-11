@@ -23,36 +23,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.164" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bold"
-        android:text="You won"
-        android:textColor="@color/colorBlack"
-        android:textSize="38dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="You won"
+            android:textColor="@color/colorBlack"
+            android:textSize="38dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232" />
 
-    <TextView
-        android:id="@+id/scorewon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your score"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/colorGray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.136" />
+        <TextView
+            android:id="@+id/scorewon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textSize="14dp"
+            android:text="Your score"
+            android:textColor="@color/colorGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.098" />
 
-    <ImageView
+        <ImageView
         android:id="@+id/imageView4"
         android:layout_width="189dp"
         android:layout_height="268dp"
@@ -64,8 +65,8 @@
 
     <Button
         android:id="@+id/againbutton"
-        android:layout_width="162dp"
-        android:layout_height="46dp"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
         android:background="@drawable/custom_button"
         android:text="Play Again"
         android:textColor="@color/colorWhite"

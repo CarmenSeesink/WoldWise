@@ -31,15 +31,14 @@ class GameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_game, container, false)
         val binding: FragmentGameBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_game, container, false)
 
         viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
-            binding.score.text = "Score: $newScore"
+            binding.score.text = "CURRENT SCORE $newScore"
         })
 
         viewModel.currentQuestion.observe(viewLifecycleOwner, Observer { newCurrent ->
-            binding.currentQuestion.text = "QUESTION $newCurrent"
+            binding.currentQuestion.text = "QUESTION ${newCurrent + 1}"
         })
 
         viewModel.question.observe(viewLifecycleOwner, Observer { newQuestion ->
@@ -57,7 +56,7 @@ class GameFragment : Fragment() {
         binding.submitButton.setOnClickListener { view : View ->
             val id = binding.radioGroup.checkedRadioButtonId
             viewModel.checkQuestion(id)
-            Toast.makeText(context, "This is the current ID: ${id}", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, "This is the current ID: ${id}", Toast.LENGTH_SHORT).show()
             if(viewModel.currentQuestion.value!! < viewModel.amountOfQuestions.value!!-1){
                 viewModel.updateQuestion(viewModel.currentQuestion.value ?: 0)
             } else {

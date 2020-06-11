@@ -17,7 +17,7 @@ class CategoryAdapter(
 ) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.category_item, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, parent)
     }
 
     override fun getItemCount(): Int = categoryList.size
@@ -28,18 +28,17 @@ class CategoryAdapter(
         holder.initialiser(categoryList.get(position), mClickListener)
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View, parent: ViewGroup) : RecyclerView.ViewHolder(itemView) {
         val textView : TextView = itemView.category_text
-//        val imageView: ImageView = itemView.category_image
+        val imageView: ImageView = itemView.category_image
         fun initialiser(categoryItem: CategoryItem, action: OnCategoryItemClickListener) {
             textView.text = categoryItem.text
-//            imageView.image = categoryItem.image 
+            Glide.with(itemView).load(Uri.parse("file:///android_asset/${categoryItem.image}")).into(imageView)
             textView.setOnClickListener { view ->
                 action.onCategoryClick(categoryItem, adapterPosition, view)
             }
         }
     }
-
 }
 
 interface OnCategoryItemClickListener {

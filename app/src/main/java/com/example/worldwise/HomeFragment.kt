@@ -27,12 +27,8 @@ class HomeFragment : Fragment(), OnCategoryItemClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_home, container, false)
         val binding: FragmentHomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
-//        binding.categoryButton.setOnClickListener(
-//            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_gameFragment)
-//        )
-        val categoryList = viewModel.generateDummyList(5)
+
         binding.categoryList.adapter = CategoryAdapter(viewModel.categories, this)
         binding.categoryList.layoutManager = LinearLayoutManager(context)
         binding.categoryList.setHasFixedSize(true)
@@ -40,7 +36,6 @@ class HomeFragment : Fragment(), OnCategoryItemClickListener {
     }
 
     override fun onCategoryClick(category: CategoryItem, position: Int, view: View) {
-        Toast.makeText(context, "The category text:  ${category.text} category ID: ${category.id} ", Toast.LENGTH_SHORT).show()
         viewModel.setupGame(category.id)
         view.findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
     }

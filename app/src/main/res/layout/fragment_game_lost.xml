@@ -35,22 +35,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.16"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232" />
 
         <TextView
             android:id="@+id/scorelost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your score"
             android:fontFamily="@font/regular"
+            android:text="Your score"
             android:textColor="@color/colorGray"
+            android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="0.136" />
+            app:layout_constraintVertical_bias="0.098" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -64,8 +65,8 @@
 
         <Button
             android:id="@+id/trybutton"
-            android:layout_width="211dp"
-            android:layout_height="52dp"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
             android:background="@drawable/custom_button"
             android:text="Try Again"
             android:textColor="@color/colorWhite"

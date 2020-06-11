@@ -41,35 +41,25 @@ class GameViewModel : ViewModel() {
     }
 
     private val questions = listOf(
-        Question("Which country has the world's highest waterfall?","mexican.png",1, listOf("Uganda", "Venezuela", "America"), "Venezuela"),
-        Question("Name the smallest Asian country in terms of both population and area?","mexican.png",1, listOf("Cook Island", "Maldives", "Tuvalu"),"Maldives"),
-        Question("How many stars are there on the flag of China?","mexican.png",1, listOf("2", "7", "5"), "5"),
-        Question("The word “Ketchup” comes from “Koetsiap”, which is in what language?","mexican.png",2, listOf("Swedish", "Malay", "Chinese"), "Malay"),
-        Question("Fortune cookies were first made in which of the following countries?","mexican.png",2, listOf("Japan", "Singapore", "America"), "America"),
-        Question("Belgian waffles were invented where?","mexican.png",2, listOf("Belgium", "Netherlands", "Luxembourg"), "Luxembourg"),
-        Question("Persepolis FC is a football club of which country?","mexican.png",3, listOf("Greece", "Egypt", "Iran"), "Iran"),
-        Question("Which of these is the oldest horse racing event?","mexican.png",3, listOf("Kentucky Derby", "Grand National", "Melbourne Cup"),"Grand National"),
-        Question("Where were the 1952 Olympic Games held?","mexican.png",3, listOf("Japan", "Germany", "Helsinki"),"Helsinki"),
-        Question("In what country is it considered a compliment to slurp loudly while eating soup?","mexican.png",4, listOf("Iceland", "Japan", "Russia"),"Japan"),
-        Question("What is the best way to eat in India?","mexican.png",4, listOf("Using a spoon", "Using your left hand", "Using your right hand"),"Using your right hand"),
-        Question("How does a Chinese wife gain respect from her husband's family?","mexican.png",4, listOf("Cuts her hair", "Gives birth to a son", "Bows down to them"),"Gives birth to a son")
+        Question("What do you call a bull fighter?","bull.png",1, listOf("Matador", "Corrida", "Estocade"), "Matador"),
+        Question("What animal is considered sacred in Egypt?","egypt.png",1, listOf("Dog", "Cat", "Cow"),"Cat"),
+        Question("How does a Chinese wife gain respect from her husband's family?","chinese.png",1, listOf("Cuts her hair", "Gives birth to a son", "Bows down to them"), "Gives birth to a son"),
+        Question("The word “Ketchup” comes from “Koetsiap”, which is in what language?","ketchup.png",2, listOf("Swedish", "Malay", "Chinese"), "Malay"),
+        Question("Pretzels were first made in which of the following countries?","pretzel.png",2, listOf("Germany", "Luxembourg", "America"), "Germany"),
+        Question("In Japan, sushi is meant to be eaten with?","sushi.png",2, listOf("Chopsticks", "Your hands", "A fork"), "Your hands"),
+        Question("Persepolis FC is a football club of which country?","soccer.png",3, listOf("Greece", "Egypt", "Iran"), "Iran"),
+        Question("In which country did boxing originate?","box.png",3, listOf("America", "Croatia", "Egypt"),"Egypt"),
+        Question("Where were the 1952 Olympic Games held?","olympic.png",3, listOf("Japan", "Germany", "Helsinki"),"Helsinki"),
+        Question("How many entrances did the colosseum in Rome have?","colosseum.png",4, listOf("3", "8", "11"),"8"),
+        Question("How heavy is the Fernsehturm in Berlin?","berlin.png",4, listOf("48 tons", "480 tons", "4800 tons"),"4800 tons"),
+        Question("The Washington Monument is a type of?","obelisk.png",4, listOf("Pyramid", "Obelisk", "Monolith"),"Obelisk")
     )
 
-    fun generateDummyList(size: Int): List<CategoryItem>{
-        val list = ArrayList<CategoryItem>()
-        for (i in 1 until size) {
-            val item = CategoryItem(i,"Category $i")
-            list += item
-        }
-
-        return list
-    }
-
      val categories = listOf(
-        CategoryItem(1,"General"),
-        CategoryItem(2,"Food"),
-        CategoryItem(3,"Sport"),
-        CategoryItem(4,"Culture")
+        CategoryItem(1,"Culture", "mexican.png"),
+        CategoryItem(2,"Food", "sandwich.png"),
+        CategoryItem(3,"Sport", "pingpong.png"),
+        CategoryItem(4,"Monuments", "sphinx.png")
     )
 
 }
