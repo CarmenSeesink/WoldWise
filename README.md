@@ -11,7 +11,7 @@
   <h3 align="center">WorldWise</h3>
 
   <p align="center">
-    Let the fun begin
+    Know your world
   </p>
 
 
@@ -24,9 +24,9 @@
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
 * [Features and Functionality](#features-and-functionality)
-   * [Choose categories](#choosecategories)
-   * [Anwser questions](#anwserquestions)
-   * [Win or lose](#winorlose)
+   * [Choose categories](#choose-categories)
+   * [Anwser questions](#anwser-questions)
+   * [Win or lose](#win-or-lose)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -111,9 +111,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [CustomListView in Kotlin](https://www.youtube.com/watch?v=95QWxTZG_Z0)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[image1]: Images/1.png
-[image2]: Images/2.png
-[image3]: Images/3.png
+[image1]: Images/image1.png
+[image2]: Images/image2.png
+[image3]: Images/image3.png
 
 
 
